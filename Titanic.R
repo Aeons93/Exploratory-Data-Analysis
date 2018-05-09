@@ -1,6 +1,9 @@
 # titanic is avaliable in your workspace
 # included titanic dataset, since it was already in the excercise workspace.
+library(rio)
 titanic<- read.csv("~\\Data-wrangling-excercise-2\\titanic3.csv")
+convert("~\\Data-wrangling-excercise-2\\titanic3.xls", 
+        "~\\Data-wrangling-excercise-2\\titanic3.csv")
 
 # 1 - Check the structure of titanic
 str(titanic)
